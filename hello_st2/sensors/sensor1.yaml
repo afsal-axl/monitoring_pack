@@ -1,0 +1,28 @@
+---
+class_name: "HelloSensor"
+enabled: true
+entry_point: "sensor1.py"
+description: "Test sensor that emits triggers."
+trigger_types:
+  -
+    name: "event1"
+    description: "An example trigger."
+    payload_schema:
+      type: "object"
+      properties:
+        greeting:
+          type: "string"
+        count:
+          type: "integer"
+        content_before:
+          type: "string"
+        content_after:
+          type: "string"
+  -
+    name: "event2"
+    description: "Another example trigger."
+    payload_schema:
+      type: "object"
+      properties:
+        error_message:
+          type: "string"

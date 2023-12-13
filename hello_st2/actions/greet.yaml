@@ -1,0 +1,20 @@
+---
+name: greet
+pack: hello_st2
+runner_type: "local-shell-script"
+description: Greet StackStorm!
+enabled: true
+entry_point: greet.py
+parameters:
+    content_before:
+        type: string
+        description: Content string
+        required: true
+        position: 1
+    content_after:
+        type: string
+        description: Content string
+        required: true
+        position: 2
+
+

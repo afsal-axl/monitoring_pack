@@ -1,0 +1,13 @@
+---
+name: action2
+pack: hello_st2
+runner_type: "local-shell-script"
+description: second action!
+enabled: true
+entry_point: action2.py
+parameters:
+    error_message:
+        type: string
+        description: Content string
+        required: true
+        position: 1

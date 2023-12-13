@@ -1,0 +1,11 @@
+---
+name: on_hello_event2
+pack: hello_st2
+description: Sample rule firing on hello_st2.event2.
+enabled: true
+trigger:
+    type: hello_st2.event2
+action:
+    ref: hello_st2.action2
+    parameters:
+        error_message: "{{trigger.error_message}}"
